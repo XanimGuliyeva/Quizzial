@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F7FB;
+}
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.app .quizzial-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #293264;  
+}
+
+.app p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #293264;
+}
+
+button {
+  background-color: #4D5B9E;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.datas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:5px;
+}
+
+label {
+  margin-right: 15px;
+  border: 1px solid #293264;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+} 
+
+input[type="radio"] + label:before {
+  content: " ";
+  display: inline-block;
+  width: 16px; 
+  height: 16px;
+  border: 2px solid #007bff; 
+  border-radius: 50%;
+  margin-right: 5px; 
+}
+
+.answer-label,.transparent{
+  background-color: transparent;    
+}
+.selected{
+  background-color: #D6DBF5;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.incorrect {
+  background-color: red;
+  color: white;
+}
+
+
+
